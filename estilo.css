@@ -1,0 +1,98 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    margin: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Layout 1 (index.html) */
+.layout1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 60vh;
+    margin: 20px;
+}
+
+.box {
+    background-color: #999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    color: black;
+    font-size: 1.2em;
+}
+
+/* Layout 2 (pagina1.html) */
+.layout2 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    width: 80%;
+    height: 60vh;
+}
+
+.cabecalho {
+    grid-column: 1 / 3;
+    background-color: #ccc;
+    padding: 20px;
+}
+
+.menu {
+    background-color: #999;
+    padding: 20px;
+}
+
+.artigo {
+    background-color: #bbb;
+    padding: 20px;
+}
+
+.rodape {
+    grid-column: 1 / 3;
+    background-color: #666;
+    padding: 20px;
+}
+
+/* Layout 3 (pagina2.html) */
+.layout3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+
+.checkerboard {
+    width: 40vh;
+    height: 40vh;
+    background-image: linear-gradient(45deg, #999 25%, transparent 25%, transparent 75%, #999 75%, #999), 
+                      linear-gradient(45deg, #999 25%, transparent 25%, transparent 75%, #999 75%, #999);
+    background-size: 10vh 10vh;
+}
